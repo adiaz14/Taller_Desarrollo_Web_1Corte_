@@ -63,7 +63,7 @@
         .boton {
             display: inline-block;
             padding: 6px;
-            width: 128px;
+            width: 200px;
             border: 1px solid black;
             color: darkslategrey;
             font-size: 19px;
@@ -98,6 +98,11 @@
             margin: auto;
             overflow: hidden;
             padding: 52px 0;
+
+        }
+
+        .tablas {
+            text-align: center;
         }
 
         .Prologo {
@@ -121,6 +126,7 @@
             text-align: justify;
             line-height: 24px;
             color: darkslategray;
+            padding: 5% 5% 5% 5%;
         }
 
         .galeria {
@@ -155,7 +161,7 @@
         .card {
             margin: 10px 0;
             width: 30%;
-            height: 540px;
+            height: 500px;
             text-align: 20px;
             box-shadow: 0px 0px 4px 0 #34495e83;
         }
@@ -166,6 +172,11 @@
             height: 230px;
             object-fit: cover;
             border-radius: 40%;
+        }
+
+        .linea {
+            background-color: darkslategrey;
+            padding: 1px;
         }
 
         .informacion-serie,
@@ -203,6 +214,54 @@
             background-color: #34495e;
             color: whitesmoke;
         }
+
+        .informacion-realidad {
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+        .mapa {
+            text-align: center;
+        }
+        .mapa_imagen {
+            margin-top: 20px;
+            border-radius: 10%;
+            border: solid;
+            text-align: center;
+            width: 480px;
+            height: 600px;
+        }
+        table {
+
+            border-collapse: collapse;
+        }
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color:lightslategray;
+            color: white;
+        }
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
 
@@ -210,7 +269,7 @@
     <header>
         <div class="textos">
             <h1 class="titulo">THE LAST KINGDOM</h1>
-            <h3 class="subtitulo">SERIES HISTORICAS</h3>
+            <h3 class="subtitulo">SERIE HISTORICA</h3>
             <h5><strong>Por: Andrés Díaz</strong></h5>
             <h6><b>Una de mis series favoritas</b></h6>
             <a href="https://serieszeta.com/el-ultimo-reino-serie-online-completa-en-hd/" class="boton" target="blank">
@@ -221,10 +280,10 @@
     </header>
     <main>
 
-        <section class="acerca de">
+        <section class="acerca de la serie">
             <div class="contenedor">
-                <h2 class="Prologo">Prologo</h2>
-                <h3 class="Slogan">El destino lo es todo</h3>
+                <h2 class="Prologo">SINOPSIS</h2>
+                <h3 class="Slogan"><i><strong>"Destiny is All"</strong></i></h3>
                 <p class="parrafo"><i>"Es el año 872 y muchos de los reinos separados de lo que ahora se conoce como
                         Inglaterra han caído en manos de los invasores daneses, dejando al gran reino de Wessex solo y
                         bajo el mando del rey Alfredo el Grande. Durante este tiempo, el Lord Uhtred, un noble sajón, es
@@ -236,10 +295,59 @@
                         entre ambas partes si quiere tener un papel en el nacimiento de una nueva nación y así lograr
                         recuperar su territorio ancestral."</i> <sup> <a
                             href="https://es.wikipedia.org/wiki/The_Last_Kingdom" target="blank">[ref]</sup> </p><br>
-                <a href="#" class="boton">Historia</a>
+                <div class="informacion-realidad">
+                    <a href="https://es.wikipedia.org/wiki/Reino_de_Wessex" target="blank" class="boton">Algo de
+                        Historia</a>
+                </div>
+            </div>
+
+            <div class="mapa">
+                <img class="mapa_imagen"
+                    src="https://i.pinimg.com/originals/44/e2/95/44e295034b35b99e7160a362c8a3bd11.jpg"
+                    alt="Siete reinos" usemap="#mapa_reinos">
+                <map name="mapa_reinos">
+                    <area shape="rect" coords="150,100,100,120" href="#">
+                </map>
             </div>
         </section>
-
+        <br>
+        <div class="linea container"></div>
+        <section class="tablas">
+            <div class="contenedor">
+                <table>
+                    <tr>
+                        <th>Temmporadas</th>
+                        <th>Episodios</th>
+                        <th>Transmisión</th>
+                        <th>Cadena</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>2015</td>
+                        <td>BBC</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>2017</td>
+                        <td>BBC</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>2018</td>
+                        <td>Netflix</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>10</td>
+                        <td>2020</td>
+                        <td>Netflix</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
         <section class="galeria">
             <!--Efecto superior-->
             <div class="efecto_superior"></div>
@@ -274,70 +382,79 @@
                         <img src="https://vader.news/__export/1599867301482/sites/gadgets/img/2020/09/11/the_last_kingdom-_basada_en_the_saxon_stories_de_bernard_cornwell.jpg_951801264.jpg"
                             alt="">
                         <h4><ins>Trama</ins></h4>
-                        <p class="resenia">Política, amor, comedia, hachas volando hacia la cara de alguien,
-                            personajes que pueden llenar nuestro corazón
-                            con una mirada y villanos a los que quieres castigar desesperadamente... Todo eso en una
-                            sola serie, y en
-                            solo episodio.</p>
+                        <p class="resenia"><small>Política, amor, comedia, hachas volando hacia la cara de alguien,
+                                personajes que pueden llenar nuestro corazón
+                                con una mirada y villanos a los que quieres castigar desesperadamente... Todo eso en una
+                                sola serie, y en
+                                solo episodio.</small></p>
                     </div>
                     <div class="card">
                         <img src="https://cinefiloserial.com.ar/wp-content/uploads/2017/10/HISTORY-THE-LAST-KINGDOM-S2-4-800x445.jpg"
                             alt="">
                         <h4><ins>Personajes</ins></h4>
-                        <p class="resenia"> Mantiene un equilibrio en el desarrollo tanto de la trama
-                            como de los personajes, prueba de ello es que usando a un personaje y ciudad inventados
-                            <mark>(Uhtred de Bebbanburg)</mark>
-                            los guionistas, explican los hechos y personajes históricos que participaron en la creación
-                            del último reino
-                            (Wessex) y la creación de Inglaterra.
+                        <p class="resenia"><small>Mantiene un equilibrio en el desarrollo tanto de la trama
+                                como de los personajes, prueba de ello es que usando a un personaje y ciudad inventados
+                                <mark>(Uhtred de Bebbanburg)</mark>
+                                los guionistas, explican los hechos y personajes históricos que participaron en la
+                                creación
+                                del último reino
+                                (Wessex) y la creación de Inglaterra.</small>
                         </p>
                     </div>
                     <div class="card">
                         <img src="https://i.ytimg.com/vi/t9Y6ZKVp0Cw/maxresdefault.jpg" alt="">
                         <h4><ins>Paisajes</ins></h4>
-                        <p class="resenia">El drama de Netflix, The Last Kingdom, abarca algunos lugares increíbles,
-                            desde extensos campos de batalla y frondosos bosques hasta las sucias ciudades de la
-                            Inglaterra medieval. Y aunque
-                            parezca increible, no esta filmada en Reino Unido.</p>
+                        <p class="resenia"><small>El drama de Netflix, The Last Kingdom, abarca algunos lugares
+                                increíbles,
+                                desde extensos campos de batalla y frondosos bosques hasta las sucias ciudades de la
+                                Inglaterra medieval. Y aunque
+                                parezca increible, no esta filmada en Reino Unido.</small></p>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="linea container"></div>
         <!--Segunda seccion de informacion-->
         <section class="informacion-serie-2">
             <div class="contenedor">
-                <h2 class="sobre-temporadas">¿SABIAS QUÉ?</h2>
-                <h3 class="slogan">Estos son algunos detalles curiosos de la serie...</h3>
+                <h2 class="sobre-temporadas">¿Y QUE HAY CON LA REALIDAD?</h2>
+                <h3 class="slogan">Para los exigentes, una combinación de verdad y ficción...</h3>
                 <div class="cards">
                     <div class="card">
-                        <img src="https://vader.news/__export/1599867301482/sites/gadgets/img/2020/09/11/the_last_kingdom-_basada_en_the_saxon_stories_de_bernard_cornwell.jpg_951801264.jpg"
+                        <img src="https://britishheritage.com/uploads/article/2007/5/832/Alfred_the_Great_-_19th_Century.jpg?t=1612518666"
                             alt="">
-                        <h4><ins>Trama</ins></h4>
-                        <p class="resenia">Política, amor, comedia, hachas volando hacia la cara de alguien,
-                            personajes que pueden llenar nuestro corazón
-                            con una mirada y villanos a los que quieres castigar desesperadamente... Todo eso en una
-                            sola serie, y en
-                            solo episodio.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://cinefiloserial.com.ar/wp-content/uploads/2017/10/HISTORY-THE-LAST-KINGDOM-S2-4-800x445.jpg"
-                            alt="">
-                        <h4><ins>Personajes</ins></h4>
-                        <p class="resenia"> Mantiene un equilibrio en el desarrollo tanto de la trama
-                            como de los personajes, prueba de ello es que usando a un personaje y ciudad inventados
-                            <mark>(Uhtred de Bebbanburg)</mark>
-                            los guionistas, explican los hechos y personajes históricos que participaron en la creación
-                            del último reino
-                            (Wessex) y la creación de Inglaterra.
+                        <h4><ins>Tintes de realidad</ins></h4>
+                        <p class="resenia"><small>La historia se desarrolla a fines del siglo IX cuando
+                                Inglaterra se separó en siete reinos, y aún no estaba unida como un solo país.
+                                El rey Alfred apareció en las tres primeras temporadas, y le
+                                apasionaba unir los reinos de Inglaterra. Incluso formó alianza con Uhtred, el personaje
+                                principal de la serie. </small>
                         </p>
                     </div>
                     <div class="card">
-                        <img src="https://i.ytimg.com/vi/t9Y6ZKVp0Cw/maxresdefault.jpg" alt="">
-                        <h4><ins>Paisajes</ins></h4>
-                        <p class="resenia">El drama de Netflix, The Last Kingdom, abarca algunos lugares increíbles,
-                            desde extensos campos de batalla y frondosos bosques hasta las sucias ciudades de la
-                            Inglaterra medieval. Y aunque
-                            parezca increible, no esta filmada en Reino Unido.</p>
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjE1MzYzNjk3OF5BMl5BanBnXkFtZTgwMzk0MzYwNzE@._V1_.jpg"
+                            alt="">
+                        <h4><ins>Y el personaje principal?</ins></h4>
+                        <p class="resenia"> <small>La primera gran interrogante es si Uhtred de
+                                Bebbanburg (Personaje principal) existió. Lo cierto es que sí existió un Uhtred "el
+                                Audaz" y fue conde de Northumbria <sub><a
+                                        href="https://es.wikipedia.org/wiki/Uhtred_el_Audaz"
+                                        target="blank">[ref]</a></sub>, que ahora se situaría en el norte de Inglaterra.
+                                Ahora bien, en
+                                la serie
+                                inicialmente se llamaba Osbert hasta que su padre lo nombró Uhtred tras al
+                                muerte de su
+                                hermano.</small>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="https://vader.news/__export/1588806100121/sites/gadgets/img/2020/05/06/vikingos-last-kingdom.png_672404822.png"
+                            alt="">
+                        <h4><ins>No es Vikingos!</ins></h4>
+                        <p class="resenia"><small>La conexión puede no ser tan fuerte como la gente piensa,
+                                ya que la serie Vikingos, creada por History, se basa en hechos históricos reales y su
+                                competidora se basa en las novelas de Bernard Cornwell, llamadas The Saxon Stories, que
+                                incluyen elementos ficticios y algunos hechos históricos.</small></p>
                     </div>
                 </div>
             </div>
@@ -346,7 +463,6 @@
 
         <section class="fondo">.
             <div class="efecto_superior"></div>
-
             </div>
             <!--Efecto inferior-2-->
             <div class="efecto_inferior_aux"></div>
@@ -355,8 +471,10 @@
 </body>
 <footer>
     <div class="contenedor">
-        <p class="texto-final"><em>Página estilo blog creada para la clase
-                de desarrollo web I, acerca de una de mis series favoritas.</em>
+        <p class="texto-final"><em><del>Rendirse, morir, perder</del>... jamas, recuerda, el coraje es encontrar la
+                voluntad
+                para superar tu miedad, nada más.</em>
+        <h6>The Last Kingdom.</h6>
         </p>
     </div>
 </footer>
